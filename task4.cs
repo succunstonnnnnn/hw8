@@ -78,18 +78,15 @@ class Outerwear : IPricedItem, IDiscountable, ISizedItem, IColoredItem
     }
 }
 
-// Програма для демонстрації
 class Program
 {
     static void Main(string[] args)
     {
-        // Створюємо книжку
         Book book = new Book();
         book.SetPrice(19.99);
         book.ApplyDiscount("10%");
         book.ApplyPromocode("SUMMER2024");
 
-        // Створюємо верхній одяг
         Outerwear outerwear = new Outerwear();
         outerwear.SetPrice(99.99);
         outerwear.ApplyDiscount("15%");
